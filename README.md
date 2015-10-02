@@ -2,7 +2,7 @@
 
 Inline and compress tags that contain the `inline` attribute. Supports `<script>`, `<link>`, and `<img>` (including `*.svg` sources) tags by default, and is easily extensible to handle others.
 
-1. Write Polymer elements on the ES2015
+1. Write Polymer elements with ES2015
 2. Run gulp
 3. ???????
 4. PROFIT
@@ -24,19 +24,19 @@ Available `options` include:
 - `svgAsImage`: convert `<img inline src="*.svg" />` to `<img>` and not `<svg>` (default `false`)
 
 ```bash
-$ npm install inline-source
+$ npm install https://github.com/BIFIT/inline-source.git
 ```
 ```html
 <!-- located at project/src/html/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- set here webcomponents.js -->  
-  <body>
-    <polymer-component></polymer-component>
-    <script inline src="./polymer-component.js"></script>
-  </body>
+<!-- set here webcomponents.js -->  
 </head>
+<body>
+  <polymer-component></polymer-component>
+  <script inline src="./polymer-component.js"></script>
+</body>
 </html>
 
 ```javascript
@@ -59,8 +59,13 @@ Output:
   </body>
 </html>
 ```
-## Gulp tasks
 
+## Install
+npm install https://github.com/BIFIT/inline-source.git
+
+
+## Gulp tasks
+```javascript
 var gulp = require('gulp');
 var inlinesource = require('gulp-inline-source');
 
@@ -72,3 +77,4 @@ gulp.task('inlinepolymer', function () {
     .pipe(gulp.dest('.'))
 
 });
+```
