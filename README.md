@@ -16,6 +16,7 @@ Inline and compress tags that contain the `inline` attribute. Supports `<script>
 Available `options` include:
 - `attribute`: attribute used to parse sources (default `inline`)
 - `compress`: enable/disable compression of inlined content (default `true`)
+- `es5`: enable/disable traceur converter (default `false`)
 - `handlers`: specify custom handlers (default `[]`) [see [custom handlers](#custom-handlers)]
 - `ignore`: disable inlining based on `tag`, `type`, and/or `format` (default `[]`)
 - `pretty`: maintain leading whitespace when `options.compress` is `false` (default `false`)
@@ -41,11 +42,9 @@ $ npm install https://github.com/BIFIT/inline-source.git
 
 ```javascript
 // polymer-component.js
-
 Polymer({
   is: 'polymer-component'
 });
-
 ```
 
 Output:
