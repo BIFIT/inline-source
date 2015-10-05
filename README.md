@@ -39,14 +39,13 @@ $ npm install https://github.com/BIFIT/inline-source.git
   <script inline src="./polymer-component.js"></script>
 </body>
 </html>
-
+```
 ```javascript
 // polymer-component.js
 Polymer({
   is: 'polymer-component'
 });
 ```
-
 Output:
 ```html
 <html>
