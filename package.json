@@ -1,7 +1,7 @@
 {
   "name": "inline-source",
   "description": "Inline all flagged js (with Traceur), css, image source files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": [
     "popeindustries <alex@pope-industries.com>",
     "Denis Baskovsky <denis@baskovsky.ru>"
@@ -17,8 +17,8 @@
     "htmlparser2": "3.8.3",
     "lodash": "~3.10.1",
     "svgo": "0.5.6",
-    "uglify-js": "2.4.24",
-    "traceur": "~0.0.88"
+    "uglify-js": "2.5.0",
+    "traceur": "~0.0.92"
   },
   "devDependencies": {
     "eslint": "*",
